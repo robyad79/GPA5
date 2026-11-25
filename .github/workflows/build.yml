@@ -1,3 +1,4 @@
+
 name: Build GPA5 APK
 
 on:
@@ -25,7 +26,7 @@ jobs:
           gradle-version: '8.5'
 
       - name: Build Debug APK
-        run: gradle assembleDebug --stacktrace
+        run: gradle :app:assembleDebug --stacktrace
 
       - name: Upload GPA5 APK
         uses: actions/upload-artifact@v4
